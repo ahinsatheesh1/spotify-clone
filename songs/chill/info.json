@@ -1,0 +1,27 @@
+{
+    "title": "Chill Mix",
+    "description": "Relaxing Beats",
+    "songs": [
+        {
+            "filename": "chill-beats-185843.mp3",
+            "title": "Chill Beats",
+            "artist": "Lofi Artist",
+            "duration": "3:45",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "good-night-lofi-cozy-chill-music-160166.mp3",
+            "title": "Good Night Lofi",
+            "artist": "Cozy Beats",
+            "duration": "2:30",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3",
+            "title": "Lost in Dreams",
+            "artist": "Future Beats",
+            "duration": "4:15",
+            "cover": "cover.jpg"
+        }
+    ]
+}

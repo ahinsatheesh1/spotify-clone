@@ -1,0 +1,27 @@
+{
+    "title": "Funky Beats",
+    "description": "Groove & Dance",
+    "songs": [
+        {
+            "filename": "sonic-branding-upbeat-commercial-promo-advertising-funk-307652.mp3",
+            "title": "Sonic Branding",
+            "artist": "Funky Artist",
+            "duration": "2:30",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "midnight-quirk-255361.mp3",
+            "title": "Midnight Quirk",
+            "artist": "Quirky Artist",
+            "duration": "2:15",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "pianoampmutedguitar-jazz-312344.mp3",
+            "title": "Piano & Muted Guitar",
+            "artist": "Jazz Artist",
+            "duration": "2:45",
+            "cover": "cover.jpg"
+        }
+    ]
+}

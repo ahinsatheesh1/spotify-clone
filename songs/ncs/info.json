@@ -1,0 +1,27 @@
+{
+    "title": "NCS Playlist",
+    "description": "No Copyright Sounds",
+    "songs": [
+        {
+            "filename": "music-no-copyright-239544.mp3",
+            "title": "Electronic Dance",
+            "artist": "NCS Artist",
+            "duration": "3:15",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "no-copyright-music-house-309375.mp3",
+            "title": "House Vibes",
+            "artist": "NCS Artist",
+            "duration": "2:45",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "no-copyright-music-trap-background-312515.mp3",
+            "title": "Trap Background",
+            "artist": "NCS Artist",
+            "duration": "3:30",
+            "cover": "cover.jpg"
+        }
+    ]
+}

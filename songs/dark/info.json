@@ -1,0 +1,27 @@
+{
+    "title": "Dark Mood",
+    "description": "Deep & Intense",
+    "songs": [
+        {
+            "filename": "horror-dark-cinematic-music-255259.mp3",
+            "title": "Horror Dark Cinematic",
+            "artist": "Dark Artist",
+            "duration": "3:15",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "terror-heights-dark-ambience-230667.mp3",
+            "title": "Terror Heights",
+            "artist": "Ambience Artist",
+            "duration": "4:30",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "dark-music-249503.mp3",
+            "title": "Dark Music",
+            "artist": "Dark Artist",
+            "duration": "2:45",
+            "cover": "cover.jpg"
+        }
+    ]
+}

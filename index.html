@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey">
+                <div class="logo"><img class="invert" src="images/logo.svg" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="images/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="images/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey">
+                <div class="library-content">
+                    <div class="library-header">
+                        <div class="library-left">
+                    <img class="invert" src="images/playlist.svg" alt="">
+                            <h2>Your Library</h2>
+                        </div>
+                        <div class="library-right">
+                            <button class="create-button">
+                                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path>
+                                </svg>
+                            </button>
+                            <button class="browse-button">
+                                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor">
+                                    <path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="library-filters">
+                        <button class="filter-button">Playlists</button>
+                        <button class="filter-button">Artists</button>
+                        <button class="filter-button">Albums</button>
+                        <button class="filter-button">Downloaded</button>
+                </div>
+                <div class="song-list">
+                        <ul>
+                            <!-- Songs will be dynamically loaded here -->
+                    </ul>
+                </div>
+                
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                        <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="navigation-buttons">
+                        <button class="nav-btn"><img src="images/prev-arrow.svg" alt="Previous"></button>
+                        <button class="nav-btn"><img src="images/next-arrow.svg" alt="Next"></button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h1 class="greeting">Good morning</h1>
+                
+                <div class="quick-plays">
+                    <div class="quick-play-grid">
+                        <div class="quick-play-card" data-folder="ncs">
+                            <img src="songs/ncs/cover.jpg" alt="NCS">
+                            <span>NCS Playlist</span>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="quick-play-card" data-folder="uplifting">
+                            <img src="songs/uplifting/cover.jpg" alt="Good Vibes">
+                            <span>Good Vibes</span>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                            </div>
+                        <div class="quick-play-card" data-folder="chill">
+                            <img src="songs/chill/cover.jpg" alt="Chill">
+                            <span>Chill Mix</span>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="quick-play-card" data-folder="love">
+                            <img src="songs/love/cover.jpg" alt="Love Songs">
+                            <span>Love Songs</span>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="section">
+                    <div class="section-header">
+                        <h2>Jump back in</h2>
+                        <button class="show-all">Show all</button>
+                    </div>
+                    <div class="playlist-grid">
+                        <div class="playlist-card" data-folder="ncs">
+                            <img src="songs/ncs/cover.jpg" alt="NCS">
+                            <div class="playlist-info">
+                                <h3>NCS Playlist</h3>
+                                <p>No Copyright Sounds</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="karan aujla">
+                            <img src="songs/karan aujla/cover.jpg" alt="Karan Aujla">
+                            <div class="playlist-info">
+                                <h3>Karan Aujla Mix</h3>
+                                <p>Punjabi Hits</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="bright">
+                            <img src="songs/bright/cover.jpg" alt="Bright">
+                            <div class="playlist-info">
+                                <h3>Bright Days</h3>
+                                <p>Happy & Energetic</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="chill">
+                            <img src="songs/chill/cover.jpg" alt="Chill">
+                            <div class="playlist-info">
+                                <h3>Chill Zone</h3>
+                                <p>Relaxing Beats</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="funky">
+                            <img src="songs/funky/cover.jpg" alt="Funky">
+                            <div class="playlist-info">
+                                <h3>Funky Beats</h3>
+                                <p>Groove & Dance</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        </div>
+                    </div>
+
+                <div class="section">
+                    <div class="section-header">
+                        <h2>More of what you like</h2>
+                        <button class="show-all">Show all</button>
+                    </div>
+                    <div class="playlist-grid">
+                        <div class="playlist-card" data-folder="diljit">
+                            <img src="songs/diljit/cover.jpg" alt="Diljit">
+                            <div class="playlist-info">
+                                <h3>Diljit's Hits</h3>
+                                <p>Punjabi Pop</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="dark">
+                            <img src="songs/dark/cover.jpg" alt="Dark">
+                            <div class="playlist-info">
+                                <h3>Dark Mood</h3>
+                                <p>Deep & Intense</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="uplifting">
+                            <img src="songs/uplifting/cover.jpg" alt="Uplifting">
+                            <div class="playlist-info">
+                                <h3>Uplifting Vibes</h3>
+                                <p>Feel Good Music</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                    </div>
+                        <div class="playlist-card" data-folder="love">
+                            <img src="songs/love/cover.jpg" alt="Love">
+                            <div class="playlist-info">
+                                <h3>Love Songs</h3>
+                                <p>Romantic Hits</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                        <div class="playlist-card" data-folder="angry">
+                            <img src="songs/angry/cover.jpg" alt="Angry">
+                            <div class="playlist-info">
+                                <h3>Angry Mode</h3>
+                                <p>High Energy</p>
+                            </div>
+                            <button class="play-button"><div class="play-icon"></div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    </div>
+                
+    <div class="search-page" style="display: none;">
+        <div class="search-header">
+            <div class="search-input-container">
+                <img src="images/search.svg" alt="Search" class="search-icon invert">
+                <input type="text" placeholder="What do you want to listen to?" class="search-input">
+                <button class="clear-search" style="display: none;">
+                    <svg role="img" height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M1.47 1.47a.75.75 0 0 1 1.06 0L8 6.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L9.06 8l5.47 5.47a.75.75 0 1 1-1.06 1.06L8 9.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L6.94 8 1.47 2.53a.75.75 0 0 1 0-1.06z"></path>
+                    </svg>
+                </button>
+            </div>
+                    </div>
+                
+        <div class="search-recent" id="searchRecent">
+            <h2>Recent searches</h2>
+            <div class="recent-searches">
+                <!-- Recent searches will be added here dynamically -->
+            </div>
+        </div>
+
+        <div class="search-results" id="searchResults" style="display: none;">
+            <div class="top-result-section">
+                <h2>Top result</h2>
+                <div class="top-result">
+                    <!-- Top result will be added here dynamically -->
+                </div>
+                    </div>
+                
+            <div class="songs-section">
+                <h2>Songs</h2>
+                <div class="songs-results">
+                    <!-- Song results will be added here dynamically -->
+                </div>
+                </div>
+                
+            <div class="playlists-section">
+                <h2>Playlists</h2>
+                <div class="playlists-results playlist-grid">
+                    <!-- Playlist results will be added here dynamically -->
+                </div>
+            </div>
+
+            <div class="artists-section">
+                <h2>Artists</h2>
+                <div class="artists-results">
+                    <!-- Artist results will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <div class="browse-all" id="browseAll">
+            <h2>Browse all</h2>
+            <div class="category-grid">
+                <div class="category-card" style="background-color: #DC148C">
+                    <h3>Podcasts</h3>
+                    <img src="images/categories/podcasts.jpg" alt="Podcasts">
+                </div>
+                <div class="category-card" style="background-color: #006450">
+                    <h3>Made For You</h3>
+                    <img src="images/categories/made-for-you.jpg" alt="Made For You">
+                </div>
+                <div class="category-card" style="background-color: #1E3264">
+                    <h3>Charts</h3>
+                    <img src="images/categories/charts.jpg" alt="Charts">
+                </div>
+                <div class="category-card" style="background-color: #8400E7">
+                    <h3>New Releases</h3>
+                    <img src="images/categories/new-releases.jpg" alt="New Releases">
+                </div>
+                <div class="category-card" style="background-color: #E8115B">
+                    <h3>Discover</h3>
+                    <img src="images/categories/discover.jpg" alt="Discover">
+                </div>
+                <div class="category-card" style="background-color: #148A08">
+                    <h3>Live Events</h3>
+                    <img src="images/categories/live-events.jpg" alt="Live Events">
+                </div>
+                <div class="category-card" style="background-color: #BC5900">
+                    <h3>Punjabi</h3>
+                    <img src="images/categories/punjabi.jpg" alt="Punjabi">
+                </div>
+                <div class="category-card" style="background-color: #E91429">
+                    <h3>Pop</h3>
+                    <img src="images/categories/pop.jpg" alt="Pop">
+                </div>
+                <div class="category-card" style="background-color: #056952">
+                    <h3>Party</h3>
+                    <img src="images/categories/party.jpg" alt="Party">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="playbar">
+        <div class="songinfo no-song">
+            <img id="current-song-image" src="images/default-album.svg" alt="Album Art">
+            <div class="song-info">
+                <span id="song-title">Choose a song</span>
+                <span id="artist-name">Select from your library</span>
+            </div>
+        </div>
+        <div class="songbuttons">
+            <div class="controls">
+                <button id="shuffle"><img src="images/shuffle.svg" alt="Shuffle"></button>
+                <button id="prev">
+                    <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M3.3 1a.7.7 0 0 1 .7.7v5.15l9.95-5.744a.7.7 0 0 1 1.05.606v12.575a.7.7 0 0 1-1.05.607L4 9.149V14.3a.7.7 0 0 1-.7.7H1.7a.7.7 0 0 1-.7-.7V1.7a.7.7 0 0 1 .7-.7h1.6z"></path>
+                    </svg>
+                </button>
+                <button id="playPause"><img src="images/play.svg" alt="Play"></button>
+                <button id="next">
+                    <svg height="16" width="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M12.7 1a.7.7 0 0 0-.7.7v5.15L2.05 1.107A.7.7 0 0 0 1 1.712v12.575a.7.7 0 0 0 1.05.607L12 9.149V14.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V1.7a.7.7 0 0 0-.7-.7h-1.6z"></path>
+                    </svg>
+                </button>
+                <button id="repeat"><img src="images/repeat.svg" alt="Repeat"></button>
+            </div>
+            <div class="songtime">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        <div class="volume-control">
+            <img src="images/volume.svg" alt="Volume" class="volume-icon">
+            <input type="range" id="volume" value="100">
+        </div>
+    </div>
+
+    <div class="full-page-view" id="jumpBackFullView">
+        <div class="full-page-header">
+            <button class="back-button">
+                <img src="images/prev-arrow.svg" alt="Back">
+            </button>
+            <h1 class="full-page-title">Jump back in</h1>
+        </div>
+        <div class="full-page-grid">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <div class="full-page-view" id="moreFullView">
+        <div class="full-page-header">
+            <button class="back-button">
+                <img src="images/prev-arrow.svg" alt="Back">
+            </button>
+            <h1 class="full-page-title">More of what you like</h1>
+        </div>
+        <div class="full-page-grid">
+            <!-- Content will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Login Modal -->
+    <div class="auth-modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/logo.svg" alt="Spotify" class="modal-logo invert">
+                <button class="close-modal">&times;</button>
+            </div>
+            <h2>Log in to Spotify</h2>
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="loginEmail">Email address</label>
+                    <input type="email" id="loginEmail" required placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required placeholder="Password">
+                </div>
+                <button type="submit" class="submit-btn">Log In</button>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <p class="switch-auth">Don't have an account? <a href="#" id="showSignup">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="auth-modal" id="signupModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="images/logo.svg" alt="Spotify" class="modal-logo invert">
+                <button class="close-modal">&times;</button>
+            </div>
+            <h2>Sign up to start listening</h2>
+            <form id="signupForm" class="auth-form">
+                <div class="form-group">
+                    <label for="signupEmail">Email address</label>
+                    <input type="email" id="signupEmail" required placeholder="Email address">
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Create a password</label>
+                    <input type="password" id="signupPassword" required placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="signupName">What should we call you?</label>
+                    <input type="text" id="signupName" required placeholder="Enter a profile name">
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <div class="divider">
+                    <span>or</span>
+                </div>
+                <p class="switch-auth">Already have an account? <a href="#" id="showLogin">Log in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

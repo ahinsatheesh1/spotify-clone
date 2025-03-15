@@ -1,0 +1,13 @@
+{
+    "title": "Diljit's Hits",
+    "description": "Punjabi Pop",
+    "songs": [
+        {
+            "filename": "Amiri Ghost 128 Kbps.mp3",
+            "title": "Amiri Ghost",
+            "artist": "Diljit Dosanjh",
+            "duration": "3:30",
+            "cover": "cover.jpg"
+        }
+    ]
+}

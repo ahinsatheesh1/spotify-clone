@@ -1,0 +1,41 @@
+{
+    "title": "Bright Days",
+    "description": "Happy & Energetic",
+    "songs": [
+        {
+            "filename": "zen-garden-310599.mp3",
+            "title": "Zen Garden",
+            "artist": "Bright Artist",
+            "duration": "3:30",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "relaxing-piano-310597.mp3",
+            "title": "Relaxing Piano",
+            "artist": "Piano Artist",
+            "duration": "2:45",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "winner_medium-3-310622.mp3",
+            "title": "Winner",
+            "artist": "Victory Artist",
+            "duration": "2:15",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "pure-love-304010.mp3",
+            "title": "Pure Love",
+            "artist": "Love Artist",
+            "duration": "2:00",
+            "cover": "cover.jpg"
+        },
+        {
+            "filename": "path-to-harmony-313385.mp3",
+            "title": "Path to Harmony",
+            "artist": "Harmony Artist",
+            "duration": "3:15",
+            "cover": "cover.jpg"
+        }
+    ]
+}
