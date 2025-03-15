@@ -56,4 +56,17 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Design inspired by Spotify
 - Icons from [source of your icons]
-- Font from Google Fonts 
+- Font from Google Fonts
+
+Screenshots:
+login page:
+![image](https://github.com/user-attachments/assets/5b408ee4-f8a9-4bdd-a4e1-0f140309097f)
+
+sign up:
+![image](https://github.com/user-attachments/assets/51b51ece-e95c-42a8-ad2b-338ece5b8d8b)
+some other pictures:
+![image](https://github.com/user-attachments/assets/dc1efc87-3d2b-4546-95b7-20a85f791a3f)
+![image](https://github.com/user-attachments/assets/24a4161c-2c36-41c4-be2e-158dc15cc83c)
+
+
+
